@@ -39,7 +39,7 @@ You should see the following in your Kubernetes logs if the bad service is denie
     "response": {
       "allowed": false,
       "status": {
-        "reason": "Port 80 in not permitted"
+        "reason": "Port 80 is not permitted"
       }
     }
   },
