@@ -29,7 +29,8 @@ If this fails you should see `admission webhook "validating-webhook.openpolicyag
 # Debugging
 
 You should see the following in your Kubernetes logs if the bad service is denied.
-`"msg": "Decision Log",
+```
+"msg": "Decision Log",
   "path": "system/main",
   "requested_by": "192.168.64.2:54396",
   "result": {
@@ -44,4 +45,5 @@ You should see the following in your Kubernetes logs if the bad service is denie
   },
   "time": "2020-02-01T01:31:39Z",
   "timestamp": "2020-02-01T01:31:39.048070346Z",
-  "type": "openpolicyagent.org/decision_logs" `
+  "type": "openpolicyagent.org/decision_logs"
+```
