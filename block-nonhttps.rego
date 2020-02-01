@@ -7,5 +7,5 @@ deny[msg] {
     input.request.operation == "CREATE"
     port := input.request.object.spec.ports[_].port
     port != 443
-    msg := sprintf("Port %d in not permitted", [port])
+    msg := sprintf("Port %d is not permitted. Only 443 is permitted", [port])
 }
